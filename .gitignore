@@ -1,0 +1,19 @@
+# Ignorar entornos virtuales
+venv/
+
+# Ignorar archivos Python temporales
+_pycache_/
+*.py[cod]
+
+# Ignorar configuración sensible
+
+
+# Ignorar bases de datos SQLite (si estás usando)
+*.sqlite3
+
+# Ignorar configuración de VSCode (opcional)
+.vscode/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
