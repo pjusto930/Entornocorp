@@ -75,39 +75,16 @@ WSGI_APPLICATION = 'mi_sitio.wsgi.application'
 
 import os
 
-# Configuración de la base de datos para producción en HostGator
-# settings.py
-DEBUG = False
-ALLOWED_HOSTS = ['educstation.com', 'www.educstation.com']
-
-# Configuración de base de datos
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'damianv1_educstation',  # Ajusta con tu nombre de base de datos
-        'USER': 'damianv1_admin',        # Ajusta con tu usuario MySQL
-        'PASSWORD': 'tu_contraseña',     # Usa tu contraseña real
+        'NAME': 'damianv1_miproyectodj',
+        'USER': 'damianv1_Blog2',
+        'PASSWORD': 'edugobb575399',  # Debes poner la contraseña que configuraste
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
-
-# Configuración de archivos estáticos
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Si sirves React desde Django, añade la ruta de build
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static'),
-]
-
-# Configuración de seguridad para producción
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-
 # Asegúrate de incluir tu dominio
 ALLOWED_HOSTS = ['educstation.com', 'www.educstation.com', '162.241.60.168']
 
