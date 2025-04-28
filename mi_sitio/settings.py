@@ -78,9 +78,9 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'damianv1_miproyectodj',
-        'USER': 'damianv1_Blog2',
-        'PASSWORD': 'edugobb575399',  # Debes poner la contraseña que configuraste
+        'NAME': 'educstation',
+        'USER': 'root',
+        'PASSWORD': 'Node2010',  # Debes poner la contraseña que configuraste
         'HOST': 'localhost',
         'PORT': '3306',
     }
