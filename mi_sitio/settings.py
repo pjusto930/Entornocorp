@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3ui2is!t^am!(qy!@@c56a)jc4mokg$v_dbwxl=9x(94@cyiwn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,13 +78,14 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'educstation',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'Node2010',  # Debes poner la contraseña que configuraste
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': 'AxfMFTHWkGxOKrcAJXsBbMLLPGvPzWDu',  # La que aparece en Railway
+        'HOST': 'metro.proxy.rlwy.net',
+        'PORT': '20335',
     }
 }
+
 # Asegúrate de incluir tu dominio
 ALLOWED_HOSTS = ['educstation.com', 'www.educstation.com', '162.241.60.168']
 

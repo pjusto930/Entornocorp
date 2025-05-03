@@ -1,0 +1,1 @@
+web: gunicorn Entornocorpo.wsgi:application --log-file -
